@@ -6,7 +6,7 @@ from flask_socketio import SocketIO, join_room, leave_room
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 
 app = Flask(__name__)
-app.secret_key = "my secret key"
+app.secret_key = "Any secret key"
 socketio = SocketIO(app)
 login_manager = LoginManager()
 login_manager.login_view = 'login'
