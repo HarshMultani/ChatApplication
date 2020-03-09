@@ -4,7 +4,7 @@ from user import User
 from pymongo import MongoClient
 from werkzeug.security import generate_password_hash
 
-client = MongoClient("mongodb+srv://test:test@chatapp-5j0wa.mongodb.net/test?retryWrites=true&w=majority")
+client = MongoClient(<Your MongoDB Client>)
 
 chat_db = client.get_database("ChatDB")
 users_collection = chat_db.get_collection("users")
