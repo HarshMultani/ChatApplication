@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Chat App</title>
+</head>
+<body>
+<h1>Join Room</h1>
+<h3>Hi {{ message }}</h3>
+<form method="post" action="/join-room">
+    <label>Join Room Name:</label>
+    <input type="text" name="room_name">
+    <br>
+    <h3>Available Rooms</h3>
+    {% for room in available_rooms %}
+    <h3> {{ room }}</h3>
+    {% endfor %}
+    <b3>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

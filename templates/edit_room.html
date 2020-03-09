@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Chat App</title>
+</head>
+<body>
+<h1>Edit Room</h1>
+<h3>{{ message }}</h3>
+<form method="post">
+    <label>Room Name:</label>
+    <input type="text" name="room_name" value="{{ room.name }}">
+    <br>
+    <label>Member to add:</label>
+    <input type="text" name="add_member" value="{{ room_members_str }}">
+    <br>
+    <label>Member to remove:</label>
+    <input type="text" name="remove_member" value="{{ room_members_str }}">
+    <br>
+    <h3>Available Users</h3>
+    {% for user in available_users %}
+    <h3>{{ user }}</h3>
+    {% endfor %}
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
