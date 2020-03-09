@@ -1,0 +1,15 @@
+<html>
+<body>
+<form action = "/login" method = "post">
+<P>{{ message }}</P>
+{% if marks>50 %}
+<p>pass</p>
+{% else %}
+<p>fail</p>
+{% endif %}
+<p>Enter name: </p>
+<p><input type = "text" name = "nm"/></p>
+<p><input type = "submit" value = "submit"></p>
+</form>
+</body>
+</html>
